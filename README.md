@@ -1,2 +1,3 @@
-# express-api-basic
-A basic template in expressjs for api development
+# EX-MONGO
+
+ExpressJS + MongoDB Starter Kit
