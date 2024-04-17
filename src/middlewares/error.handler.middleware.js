@@ -1,3 +1,4 @@
+const { httpStatus } = require('../constants/http.constant');
 const ApiException = require('../exceptions/api.exception');
 
 module.exports = (error, req, res, next) => {
@@ -6,7 +7,7 @@ module.exports = (error, req, res, next) => {
             message: error.message
         });
     } else {
-        return res.status(500).json({
+        return res.status(httpStatus.SERVER_ERROR).json({
             message: 'something went wrong'
         });
     }

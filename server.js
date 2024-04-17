@@ -1,8 +1,8 @@
 if (process.NODE_ENV != 'production') require('dotenv').config();
 const expressPort = process.env.EXPRESS_PORT;
 
-const initMongoose = require('./src/loaders/mongodb.loader');
-initMongoose();
+const initMongoDB = require('./src/loaders/mongodb.loader');
+initMongoDB();
 
 const express = require('express');
 const app = express();

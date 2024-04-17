@@ -7,5 +7,6 @@ module.exports = {
         FORBIDDEN: 403,
         OK: 200,
         CREATED: 201,
+        SERVER_ERROR: 500,
     },
 }
